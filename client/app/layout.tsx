@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
+import { generatePageMetadata } from "@/app/lib/metadata";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -15,10 +16,11 @@ const jetbrainsMono = JetBrains_Mono({
   display: "swap",
 });
 
-export const metadata: Metadata = {
-  title: "Orlando Ascanio - AI Engineer • Product Builder • Founder in Training",
-  description: "Professional portfolio of Orlando Ascanio, showcasing AI engineering projects, product development work, and insights on building meaningful systems.",
-};
+export const metadata: Metadata = generatePageMetadata({
+  title: "Orlando Ascanio",
+  description: "AI Engineer and Product Builder focused on creating intelligent systems and tools that help people learn, grow, and operate at their best. Building meaningful software with clarity and discipline.",
+  path: "/",
+});
 
 export default function RootLayout({
   children,
