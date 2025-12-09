@@ -21,7 +21,7 @@ export default function Layout({ children }: LayoutProps) {
           focus:translate-y-0 
           focus:outline-none 
           transition-transform 
-          z-[999]
+          z-999
         "
       >
         Skip to content
