@@ -1,7 +1,5 @@
-import type { Metadata } from "next";
 import { Inter, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
-import { generatePageMetadata } from "@/app/lib/metadata";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -16,22 +14,14 @@ const jetbrainsMono = JetBrains_Mono({
   display: "swap",
 });
 
-export const metadata: Metadata = generatePageMetadata({
-  title: "Orlando Ascanio",
-  description: "AI Engineer and Product Builder focused on creating intelligent systems and tools that help people learn, grow, and operate at their best. Building meaningful software with clarity and discipline.",
-  path: "/",
-});
-
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
-    <html lang="en">
-      <body
-        className={`${inter.variable} ${jetbrainsMono.variable}`}
-      >
+    <html>
+      <body className={`${inter.className} ${jetbrainsMono.className}`}>
         {children}
       </body>
     </html>
