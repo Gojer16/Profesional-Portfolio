@@ -64,6 +64,9 @@
 
 * {
   box-sizing: border-box;
+  overflow-y: none;
+  overflow-x: none;
+  overscroll-behavior: none;
 }
 
 html {
