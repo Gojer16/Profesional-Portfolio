@@ -1,2 +1,154 @@
 @import "tailwindcss";
+@import "../styles/tokens.css";
 
+@theme {
+  /* Colors */
+  --color-primary: var(--primary);
+  --color-primary-soft: var(--primary-soft);
+  --color-primary-light: var(--primary-light);
+  --color-background: var(--color-bg);
+  --color-text-primary: var(--color-text);
+  --color-text-secondary: var(--color-text-secondary);
+  --color-border: var(--color-border);
+  --color-card-bg: var(--color-card-bg);
+  
+  /* Font families */
+  --font-family-sans: var(--font-inter), 'Inter', 'SF Pro Text', system-ui, -apple-system, sans-serif;
+  --font-family-display: var(--font-inter), 'Inter', 'SF Pro Display', system-ui, -apple-system, sans-serif;
+  --font-family-mono: var(--font-jetbrains-mono), 'JetBrains Mono', 'SF Mono', 'Menlo', monospace;
+  
+  /* Font sizes with line heights */
+  --font-size-h1: 48px;
+  --line-height-h1: 1.2;
+  --font-weight-h1: 600;
+  
+  --font-size-h2: 32px;
+  --line-height-h2: 1.3;
+  --font-weight-h2: 600;
+  
+  --font-size-h3: 24px;
+  --line-height-h3: 1.4;
+  --font-weight-h3: 600;
+  
+  --font-size-body-lg: 20px;
+  --line-height-body-lg: 1.6;
+  
+  --font-size-body: 16px;
+  --line-height-body: 1.5;
+  
+  --font-size-body-sm: 14px;
+  --line-height-body-sm: 1.5;
+  
+  /* Spacing */
+  --spacing-2: var(--space-2);
+  --spacing-3: var(--space-3);
+  --spacing-4: var(--space-4);
+  --spacing-6: var(--space-6);
+  --spacing-8: var(--space-8);
+  --spacing-12: var(--space-12);
+  --spacing-16: var(--space-16);
+  
+  /* Max widths */
+  --max-width-content: var(--content-max-width);
+  --max-width-line: var(--max-line-length);
+  
+  /* Border radius */
+  --radius-default: var(--radius-base);
+  --radius-lg: var(--radius-lg);
+  
+  /* Transitions */
+  --transition-duration-default: var(--transition-duration);
+  --transition-timing-function-default: var(--transition-timing);
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  /* Smooth scrolling */
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-family-sans);
+  font-size: var(--font-size-body);
+  line-height: var(--line-height-body);
+  
+  /* Text rendering optimizations */
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: 'kern' 1, 'liga' 1;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-weight: 600;
+}
+
+h1 {
+  font-family: var(--font-family-display);
+  font-size: var(--font-size-h1);
+  line-height: var(--line-height-h1);
+  font-weight: var(--font-weight-h1);
+}
+
+h2 {
+  font-family: var(--font-family-display);
+  font-size: var(--font-size-h2);
+  line-height: var(--line-height-h2);
+  font-weight: var(--font-weight-h2);
+}
+
+h3 {
+  font-family: var(--font-family-display);
+  font-size: var(--font-size-h3);
+  line-height: var(--line-height-h3);
+  font-weight: var(--font-weight-h3);
+}
+
+p {
+  margin: 0;
+  hyphens: auto;
+}
+
+*:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
+  border-radius: var(--radius-base);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+@media (max-width: 640px) {
+  h1 {
+    font-size: 40px;
+  }
+  
+  h2 {
+    font-size: 28px;
+  }
+  
+  h3 {
+    font-size: 20px;
+  }
+  
+  body {
+    font-size: 16px;
+  }
+}
