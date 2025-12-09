@@ -48,8 +48,8 @@ export default function Home() {
             Things I enjoy: deep learning, structured thinking, reading, building tools, jumping rope, and exploring ideas that make life more intentional.
             <br /><br />
             You can find me on:{' '}
-            <TextLink href="https://github.com/USERNAME" >GitHub</TextLink> (building in public), 
-            <TextLink href="https://www.linkedin.com/in/USERNAME"> LinkedIn</TextLink> (professional updates),
+            <TextLink href="https://github.com/gojer16" >GitHub</TextLink> (building in public), 
+            <TextLink href="https://www.linkedin.com/in/orlando-ascanio-dev"> LinkedIn</TextLink> (professional updates),
             <TextLink href={instagramUrl}> Instagram</TextLink> (my personal side).
           </p>
 
