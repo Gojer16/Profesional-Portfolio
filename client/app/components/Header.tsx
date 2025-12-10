@@ -2,18 +2,13 @@
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useTranslations, useLocale } from 'next-intl';
+import LanguageSwitcher from './LanguageSwitcher';
 
 const navigationItems = [
   { label: 'work', href: '/work' },
   { label: 'notes', href: '/notes' },
   { label: 'about', href: '/about' },
   { label: 'contact', href: '/contact' },
-];
-
-const locales = [
-  { code: 'en', label: 'EN' },
-  { code: 'es', label: 'ES' },
-  { code: 'de', label: 'DE' },
 ];
 
 export default function Header() {
@@ -87,32 +82,8 @@ export default function Header() {
             </ul>
 
             {/* Language Switcher */}
-            <div className="flex items-center gap-2 ml-4 pl-4 border-l border-border/60">
-              {locales.map((locale) => {
-                const isCurrentLocale = currentLocale === locale.code;
-                const pathWithoutLocale = pathname.replace(/^\/(en|es|de)/, '') || '/';
-                const href = `/${locale.code}${pathWithoutLocale}`;
-
-                return (
-                  <Link
-                    key={locale.code}
-                    href={href}
-                    className={`
-                      text-xs font-medium
-                      px-2 py-1 rounded
-                      transition-all duration-200
-                      ${
-                        isCurrentLocale
-                          ? 'bg-primary text-white'
-                          : 'text-text-secondary hover:text-primary hover:bg-primary/10'
-                      }
-                    `}
-                    aria-label={`Switch to ${locale.label}`}
-                  >
-                    {locale.label}
-                  </Link>
-                );
-              })}
+            <div className="ml-4 pl-4 border-l border-border/60">
+              <LanguageSwitcher />
             </div>
           </div>
         </nav>
