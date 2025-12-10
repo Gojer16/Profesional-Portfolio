@@ -17,7 +17,7 @@ export default function NoteCard({
   slug,
   publishedAt,
 }: NoteCardProps) {
-  const formattedDate = new Date(publishedAt).toLocaleDateString("en-US", {
+  const formattedDate = new Date(publishedAt + 'T00:00:00').toLocaleDateString("en-US", {
     year: "numeric",
     month: "long",
     day: "numeric",

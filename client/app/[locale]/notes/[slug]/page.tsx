@@ -37,7 +37,7 @@ export default async function NotePage({ params }: NotePageProps) {
     notFound();
   }
 
-  const formattedDate = new Date(note.published_at).toLocaleDateString('en-US', {
+  const formattedDate = new Date(note.published_at + 'T00:00:00').toLocaleDateString('en-US', {
     year: 'numeric',
     month: 'long',
     day: 'numeric',
