@@ -1,0 +1,81 @@
+{
+  "nav": {
+    "home": "Strona Główna",
+    "work": "Praca",
+    "notes": "Notatki",
+    "about": "O Mnie",
+    "contact": "Kontakt"
+  },
+  "home": {
+    "title": "Orlando Ascanio",
+    "subtitle": "Inżynier AI • Twórca Produktów • Założyciel w Szkoleniu",
+    "intro": "Jestem Orlando Ascanio, inżynierem AI i twórcą produktów skupionym na projektowaniu narzędzi opartych na AI, które pomagają ludziom uczyć się, myśleć i działać z jasnością.",
+    "paragraph1": "Moja praca znajduje się na przecięciu systemów AI, inżynierii oprogramowania i rozwoju osobistego. Zależy mi na budowaniu niezawodnych systemów, rzeczy, które dobrze rozumują, czysto się integrują i rozwiązują prawdziwe problemy bez niepotrzebnej złożoności lub szumu.",
+    "paragraph2": "Teraz moja energia idzie w głębokie uczenie się (ludzkie i techniczne), doskonalenie moich umiejętności inżynieryjnych, naukę niemieckiego, poważne czytanie i budowanie prawdziwych produktów, które pchają mnie do przodu, od narzędzi AI po moje pierwsze aplikacje macOS.",
+    "paragraph3": "Poza kodowaniem zawsze byłem ciekawy, jak ludzie myślą, uczą się i rosną. Ta ciekawość kształtuje mój projekt: jasna struktura, jasne interfejsy i narzędzia, które naprawdę pomagają komuś robić postępy.",
+    "paragraph4": "Rzeczy, które lubię: głębokie uczenie się, strukturalne myślenie, czytanie, budowanie narzędzi, skakanie przez skakankę i odkrywanie pomysłów, które czynią życie bardziej intencjonalnym.",
+    "findMe": "Możesz mnie znaleźć na:",
+    "github": "GitHub",
+    "githubDesc": "buduję publicznie",
+    "linkedin": "LinkedIn",
+    "linkedinDesc": "aktualizacje zawodowe",
+    "instagram": "Instagram",
+    "instagramDesc": "moja osobista strona",
+    "viewWork": "Zobacz moją pracę",
+    "readNotes": "Przeczytaj moje notatki"
+  },
+  "work": {
+    "title": "Praca",
+    "intro": "Tworzę narzędzia, prototypy i systemy. To są rzeczy, które zbudowałem lub buduję.",
+    "noProjects": "Brak aktywnych projektów do wyświetlenia.",
+    "year": "Rok",
+    "whyItMatters": "Dlaczego to ważne",
+    "techStack": "Stos Technologiczny",
+    "viewProject": "Zobacz Projekt"
+  },
+  "notes": {
+    "title": "Notatki",
+    "subtitle": "Krótkie spostrzeżenia na temat inżynierii AI, projektowania systemów, myślenia produktowego i mentalności założyciela.",
+    "noNotes": "Jeszcze brak notatek. Nowe wkrótce."
+  },
+  "about": {
+    "title": "O Mnie",
+    "intro": "Ta strona zagłębia się w filozofię, zasady i długoterminowy kierunek mojej ścieżki jako twórcy.",
+    "subtitle": "Inżynier AI • Twórca Produktów • Założyciel w Szkoleniu",
+    "AboutMe": "Moja Ścieżka",
+    "AboutMeText1": "Jestem inżynierem AI i twórcą produktów skupionym na szybkim uczeniu się, budowaniu prawdziwych rzeczy i rozwijaniu umiejętności, aby w końcu prowadzić własną firmę. Zależy mi na jasności, strukturze i tworzeniu narzędzi, które naprawdę pomagają komuś iść do przodu.",
+    "AboutMeText2": "Moja praca znajduje się na przecięciu systemów AI, inżynierii oprogramowania i ludzkiego doskonalenia w praktyczny sposób: budować, testować, udoskonalać. Teraz doskonalę swoje rzemiosło, budując aplikacje, studiując głęboko i przesuwając swoje granice jako uczeń i twórca.",
+    "principles": "Zasady",
+    "principlesList": [
+      "Najpierw treść, potem estetyka",
+      "Głębia nad hałasem",
+      "Praca > rozmowa",
+      "Systemy, nie hacki",
+      "Konsekwencja nad intensywnością",
+      "Stań się człowiekiem, którego podziwiasz",
+      "Służ, zanim będziesz szukać pochwał",
+      "Bądź wystarczająco zdyscyplinowany, aby być wolnym"
+    ],
+    "vision": "Wizja",
+    "visionText": "Chcę życia zbudowanego na mistrzostwo, wolności i wpływie żyć globalnie, uczyć się głęboko i budować produkty, które mają znaczenie. Moim długoterminowym celem jest rozwinięcie umiejętności i doświadczenia, aby tworzyć narzędzia, które pomogą milionom uczyć się, myśleć, rosnąć i działać z większą jasnością.",
+    "whatImDoing": "Co Teraz Robię",
+    "whatImDoingList": [
+      "Doskonalę swoje umiejętności inżynieryjne (systemy AI, agenci, aplikacje macOS)",
+      "Agresywnie się uczę (niemiecki, głębokie czytanie, budowanie systemów świadomej praktyki)",
+      "Wysyłam eksperymenty produktowe, które przesuwają moje granice i przygotowują mnie na ścieżkę założyciela"
+    ]
+  },
+  "contact": {
+    "title": "Kontakt",
+    "intro": "Najlepszym sposobem na skontaktowanie się ze mną jest e-mail. Jestem również aktywny na GitHub, gdzie dzielę się swoją pracą.",
+    "callToActionTitle": "Otwarty na współpracę, możliwości i znaczące projekty.",
+    "callToActionSubtitle": "Jeśli chcesz współpracować, skontaktuj się w dowolnym momencie.",
+    "followTitle": "Śledź moją pracę i aktualizacje życia",
+    "email": "E-mail",
+    "github": "GitHub",
+    "linkedin": "LinkedIn"
+  },
+  "footer": {
+    "rights": "Wszelkie prawa zastrzeżone."
+  }
+}

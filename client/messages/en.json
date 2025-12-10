@@ -1,0 +1,81 @@
+{
+  "nav": {
+    "home": "Home",
+    "work": "Work",
+    "notes": "Notes",
+    "about": "About",
+    "contact": "Contact"
+  },
+  "home": {
+    "title": "Orlando Ascanio",
+    "subtitle": "AI Engineer • Product Builder • Founder in Training",
+    "intro": "I'm Orlando Ascanio, an AI engineer and product builder focused on designing AI-powered tools that help people learn, think, and move with clarity.",
+    "paragraph1": "My work lives at the intersection of AI systems, software engineering, and personal growth. I care about building reliable systems, things that reason well, integrate cleanly, and solve real problems without unnecessary complexity or hype.",
+    "paragraph2": "Right now, my energy goes into deep learning (the human and technical kind), sharpening my engineering skills, studying German, reading seriously, and building real products that push me forward, everything from AI tools to my first macOS apps.",
+    "paragraph3": "Outside of coding, I've always been curious about how people think, learn, and grow. That curiosity shapes how I design: clear structure, clear interfaces, and tools that actually help someone make progress.",
+    "paragraph4": "Things I enjoy: deep learning, structured thinking, reading, building tools, jumping rope, and exploring ideas that make life more intentional.",
+    "findMe": "You can find me on:",
+    "github": "GitHub",
+    "githubDesc": "building in public",
+    "linkedin": "LinkedIn",
+    "linkedinDesc": "professional updates",
+    "instagram": "Instagram",
+    "instagramDesc": "my personal side",
+    "viewWork": "View my work",
+    "readNotes": "Read my notes"
+  },
+  "work": {
+    "title": "Work",
+    "intro": "I make tools, prototypes, and systems. These are the things I've built or am building.",
+    "noProjects": "No active projects to display yet.",
+    "year": "Year",
+    "whyItMatters": "Why it matters",
+    "techStack": "Tech Stack",
+    "viewProject": "View Project"
+  },
+  "notes": {
+  "title": "Notes",
+  "subtitle": "Short insights on AI engineering, systems design, product thinking, and the founder mindset.",
+  "noNotes": "No notes yet. New ones are coming soon."
+},
+  "about": {
+    "title": "About Me",
+    "intro": "This page goes deeper into the philosophy, principles, and long-term direction behind my path as a builder.",
+    "subtitle": "AI Engineer • Product Builder • Founder in Training",
+    "AboutMe": "My Path",
+    "AboutMeText1": "I'm an AI engineer and product builder focused on learning fast, building real things, and developing the skills to eventually run my own company. I care about clarity, structure, and making tools that actually help someone move forward.",
+    "AboutMeText2": "My work sits at the intersection of AI systems, software engineering, and human improvement in a practical, hands-on way: build it, test it, refine it. Right now, I'm sharpening my craft by building apps, studying deeply, and pushing my limits as a learner and builder.",
+    "principles": "Principles",
+    "principlesList": [
+      "Substance first, aesthetics second",
+      "Depth over noise",
+      "Work > talk",
+      "Systems, not hacks",
+      "Consistency over intensity",
+      "Become the man you admire",
+      "Serve before you seek praise",
+      "Be disciplined enough to be free"
+    ],
+    "vision": "Vision",
+    "visionText": "I want a life built on mastery, freedom, and impact living globally, learning deeply, and building products that matter. My long-term aim is to develop the skills and experience to create tools that help millions learn, think, grow, and operate with more clarity.",
+    "whatImDoing": "What I'm Doing Now",
+    "whatImDoingList": [
+      "Sharpening my engineering skills (AI systems, agents, macOS apps)",
+      "Learning aggressively (German, deep reading, building deliberate practice systems)",
+      "Shipping product experiments that push my limits and prepare me for the founder path"
+    ]
+  },
+  "contact": {
+    "title": "Contact",
+    "intro": "The best way to reach me is by email. I'm also active on GitHub where I share my work.",
+     "callToActionTitle": "Open to collaborations, opportunities, and meaningful projects.",
+      "callToActionSubtitle": "If you want to work together reach out anytime.",
+  "followTitle": "Follow my work & life updates",
+    "email": "Email",
+    "github": "GitHub",
+    "linkedin": "LinkedIn"
+  },
+  "footer": {
+    "rights": "All rights reserved."
+  }
+}

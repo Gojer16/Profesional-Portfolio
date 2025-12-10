@@ -1,0 +1,81 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "work": "Trabajo",
+    "notes": "Notas",
+    "about": "Acerca de",
+    "contact": "Contacto"
+  },
+  "home": {
+    "title": "Orlando Ascanio",
+    "subtitle": "Ingeniero de IA • Constructor de Productos • Fundador en Formación",
+    "intro": "Soy Orlando Ascanio, un ingeniero de IA y constructor de productos enfocado en diseñar herramientas impulsadas por IA que ayudan a las personas a aprender, pensar y moverse con claridad.",
+    "paragraph1": "Mi trabajo vive en la intersección de sistemas de IA, ingeniería de software y crecimiento personal. Me importa construir sistemas confiables, cosas que razonan bien, se integran limpiamente y resuelven problemas reales sin complejidad innecesaria o exageración.",
+    "paragraph2": "Ahora mismo, mi energía va hacia el aprendizaje profundo (tanto humano como técnico), afilando mis habilidades de ingeniería, estudiando alemán, leyendo seriamente y construyendo productos reales que me impulsan hacia adelante, desde herramientas de IA hasta mis primeras aplicaciones de macOS.",
+    "paragraph3": "Fuera de la programación, siempre he sido curioso sobre cómo las personas piensan, aprenden y crecen. Esa curiosidad da forma a cómo diseño: estructura clara, interfaces claras y herramientas que realmente ayudan a alguien a progresar.",
+    "paragraph4": "Cosas que disfruto: aprendizaje profundo, pensamiento estructurado, lectura, construcción de herramientas, saltar la cuerda y explorar ideas que hacen la vida más intencional.",
+    "findMe": "Puedes encontrarme en:",
+    "github": "GitHub",
+    "githubDesc": "construyendo en público",
+    "linkedin": "LinkedIn",
+    "linkedinDesc": "actualizaciones profesionales",
+    "instagram": "Instagram",
+    "instagramDesc": "mi lado personal",
+    "viewWork": "Ver mi trabajo",
+    "readNotes": "Leer mis notas"
+  },
+  "work": {
+    "title": "Trabajo",
+    "intro": "Hago herramientas, prototipos y sistemas. Estas son las cosas que he construido o estoy construyendo.",
+    "noProjects": "Aún no hay proyectos activos para mostrar.",
+    "year": "Año",
+    "whyItMatters": "Por qué importa",
+    "techStack": "Stack Tecnológico",
+    "viewProject": "Ver Proyecto"
+  },
+  "notes": {
+    "title": "Notas",
+    "subtitle": "Perspectivas breves sobre ingeniería de IA, diseño de sistemas, pensamiento de producto y mentalidad de fundador.",
+    "noNotes": "Aún no hay notas. Pronto llegarán nuevas."
+  },
+  "about": {
+    "title": "Acerca de Mí",
+    "intro": "Esta página profundiza en la filosofía, principios y dirección a largo plazo detrás de mi camino como constructor.",
+    "subtitle": "Ingeniero de IA • Constructor de Productos • Fundador en Formación",
+    "AboutMe": "Mi Camino",
+    "AboutMeText1": "Soy un ingeniero de IA y constructor de productos enfocado en aprender rápido, construir cosas reales y desarrollar las habilidades para eventualmente dirigir mi propia empresa. Me importa la claridad, la estructura y hacer herramientas que realmente ayuden a alguien a avanzar.",
+    "AboutMeText2": "Mi trabajo se encuentra en la intersección de sistemas de IA, ingeniería de software y mejora humana de manera práctica y práctica: construirlo, probarlo, refinarlo. Ahora mismo, estoy afilando mi oficio construyendo aplicaciones, estudiando profundamente y empujando mis límites como aprendiz y constructor.",
+    "principles": "Principios",
+    "principlesList": [
+      "Sustancia primero, estética segundo",
+      "Profundidad sobre ruido",
+      "Trabajo > hablar",
+      "Sistemas, no trucos",
+      "Consistencia sobre intensidad",
+      "Conviértete en el hombre que admiras",
+      "Sirve antes de buscar elogios",
+      "Sé lo suficientemente disciplinado para ser libre"
+    ],
+    "vision": "Visión",
+    "visionText": "Quiero una vida construida sobre maestría, libertad e impacto viviendo globalmente, aprendiendo profundamente y construyendo productos que importan. Mi objetivo a largo plazo es desarrollar las habilidades y la experiencia para crear herramientas que ayuden a millones a aprender, pensar, crecer y operar con más claridad.",
+    "whatImDoing": "Qué Estoy Haciendo Ahora",
+    "whatImDoingList": [
+      "Afilando mis habilidades de ingeniería (sistemas de IA, agentes, aplicaciones macOS)",
+      "Aprendiendo agresivamente (alemán, lectura profunda, construyendo sistemas de práctica deliberada)",
+      "Enviando experimentos de productos que empujan mis límites y me preparan para el camino del fundador"
+    ]
+  },
+  "contact": {
+    "title": "Contacto",
+    "intro": "La mejor manera de contactarme es por correo electrónico. También estoy activo en GitHub donde comparto mi trabajo.",
+    "callToActionTitle": "Abierto a colaboraciones, oportunidades y proyectos significativos.",
+    "callToActionSubtitle": "Si quieres trabajar juntos, contáctame en cualquier momento.",
+    "followTitle": "Sigue mi trabajo y actualizaciones de vida",
+    "email": "Correo Electrónico",
+    "github": "GitHub",
+    "linkedin": "LinkedIn"
+  },
+  "footer": {
+    "rights": "Todos los derechos reservados."
+  }
+}

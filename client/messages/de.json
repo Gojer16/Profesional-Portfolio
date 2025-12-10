@@ -1,0 +1,81 @@
+{
+  "nav": {
+    "home": "Startseite",
+    "work": "Arbeit",
+    "notes": "Notizen",
+    "about": "Über",
+    "contact": "Kontakt"
+  },
+  "home": {
+    "title": "Orlando Ascanio",
+    "subtitle": "KI-Ingenieur • Produktentwickler • Gründer in Ausbildung",
+    "intro": "Ich bin Orlando Ascanio, ein KI-Ingenieur und Produktentwickler, der sich auf die Entwicklung KI-gestützter Tools konzentriert, die Menschen beim Lernen, Denken und klaren Handeln unterstützen.",
+    "paragraph1": "Meine Arbeit liegt an der Schnittstelle von KI-Systemen, Software-Engineering und persönlicher Entwicklung. Mir ist es wichtig, zuverlässige Systeme zu bauen – Dinge, die gut funktionieren, sich sauber integrieren und echte Probleme ohne unnötige Komplexität oder Hype lösen.",
+    "paragraph2": "Derzeit fließt meine Energie in Deep Learning (sowohl menschlich als auch technisch), das Schärfen meiner Engineering-Fähigkeiten, das Studium von Deutsch, ernsthaftes Lesen und den Bau echter Produkte, die mich voranbringen – von KI-Tools bis zu meinen ersten macOS-Apps.",
+    "paragraph3": "Außerhalb des Programmierens war ich schon immer neugierig darauf, wie Menschen denken, lernen und wachsen. Diese Neugier prägt mein Design: klare Struktur, klare Schnittstellen und Tools, die jemandem wirklich helfen, Fortschritte zu machen.",
+    "paragraph4": "Dinge, die ich genieße: Deep Learning, strukturiertes Denken, Lesen, Tools bauen, Seilspringen und Ideen erkunden, die das Leben bewusster machen.",
+    "findMe": "Sie finden mich auf:",
+    "github": "GitHub",
+    "githubDesc": "öffentlich bauen",
+    "linkedin": "LinkedIn",
+    "linkedinDesc": "berufliche Updates",
+    "instagram": "Instagram",
+    "instagramDesc": "meine persönliche Seite",
+    "viewWork": "Meine Arbeit ansehen",
+    "readNotes": "Meine Notizen lesen"
+  },
+  "work": {
+    "title": "Arbeit",
+    "intro": "Ich erstelle Tools, Prototypen und Systeme. Dies sind die Dinge, die ich gebaut habe oder baue.",
+    "noProjects": "Noch keine aktiven Projekte anzuzeigen.",
+    "year": "Jahr",
+    "whyItMatters": "Warum es wichtig ist",
+    "techStack": "Tech-Stack",
+    "viewProject": "Projekt ansehen"
+  },
+  "notes": {
+    "title": "Notizen",
+    "subtitle": "Kurze Einblicke in KI-Engineering, Systemdesign, Produktdenken und Gründermentalität.",
+    "noNotes": "Noch keine Notizen. Neue kommen bald."
+  },
+  "about": {
+    "title": "Über Mich",
+    "intro": "Diese Seite geht tiefer in die Philosophie, Prinzipien und langfristige Richtung hinter meinem Weg als Baumeister ein.",
+    "subtitle": "KI-Ingenieur • Produktentwickler • Gründer in Ausbildung",
+    "AboutMe": "Mein Weg",
+    "AboutMeText1": "Ich bin ein KI-Ingenieur und Produktentwickler, der sich darauf konzentriert, schnell zu lernen, echte Dinge zu bauen und die Fähigkeiten zu entwickeln, um schließlich mein eigenes Unternehmen zu führen. Mir sind Klarheit, Struktur und die Entwicklung von Tools wichtig, die jemandem wirklich helfen, voranzukommen.",
+    "AboutMeText2": "Meine Arbeit liegt an der Schnittstelle von KI-Systemen, Software-Engineering und menschlicher Verbesserung auf praktische, praktische Weise: bauen, testen, verfeinern. Im Moment schärfe ich mein Handwerk, indem ich Apps baue, tief studiere und meine Grenzen als Lernender und Baumeister auslote.",
+    "principles": "Prinzipien",
+    "principlesList": [
+      "Substanz zuerst, Ästhetik zweitens",
+      "Tiefe über Lärm",
+      "Arbeit > Reden",
+      "Systeme, keine Hacks",
+      "Beständigkeit über Intensität",
+      "Werde der Mann, den du bewunderst",
+      "Diene, bevor du Lob suchst",
+      "Sei diszipliniert genug, um frei zu sein"
+    ],
+    "vision": "Vision",
+    "visionText": "Ich möchte ein Leben aufbauen, das auf Meisterschaft, Freiheit und Wirkung basiert global leben, tief lernen und Produkte bauen, die wichtig sind. Mein langfristiges Ziel ist es, die Fähigkeiten und Erfahrungen zu entwickeln, um Tools zu schaffen, die Millionen helfen, zu lernen, zu denken, zu wachsen und mit mehr Klarheit zu arbeiten.",
+    "whatImDoing": "Was Ich Jetzt Mache",
+    "whatImDoingList": [
+      "Schärfung meiner Engineering-Fähigkeiten (KI-Systeme, Agenten, macOS-Apps)",
+      "Aggressives Lernen (Deutsch, tiefes Lesen, Aufbau bewusster Übungssysteme)",
+      "Versand von Produktexperimenten, die meine Grenzen ausloten und mich auf den Gründerweg vorbereiten"
+    ]
+  },
+  "contact": {
+    "title": "Kontakt",
+    "intro": "Der beste Weg, mich zu erreichen, ist per E-Mail. Ich bin auch auf GitHub aktiv, wo ich meine Arbeit teile.",
+    "callToActionTitle": "Offen für Zusammenarbeit, Möglichkeiten und bedeutungsvolle Projekte.",
+    "callToActionSubtitle": "Wenn Sie zusammenarbeiten möchten, melden Sie sich jederzeit.",
+    "followTitle": "Folgen Sie meiner Arbeit und meinen Lebens-Updates",
+    "email": "E-Mail",
+    "github": "GitHub",
+    "linkedin": "LinkedIn"
+  },
+  "footer": {
+    "rights": "Alle Rechte vorbehalten."
+  }
+}
