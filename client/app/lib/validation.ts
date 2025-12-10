@@ -10,6 +10,8 @@ const VALID_CATEGORIES = [
   'Psychology & self-awareness',
   'Skill acquisition',
   'Founder mindset',
+  'Mindset',
+  'Performance'
 ] as const;
 
 /**
@@ -159,12 +161,6 @@ export function validateNoteFrontmatter(
   }
   if (!isValidISODate(frontmatter.published_at)) {
     throw new Error(`${filepath}: published_at must be valid ISO 8601 date (YYYY-MM-DD) (found "${frontmatter.published_at}")`);
-  }
-
-  // Content length validation (3-7 sentences)
-  const sentenceCount = countSentences(content);
-  if (sentenceCount < 3 || sentenceCount > 7) {
-    throw new Error(`${filepath}: content must be 3-7 sentences (found ${sentenceCount})`);
   }
 }
 
