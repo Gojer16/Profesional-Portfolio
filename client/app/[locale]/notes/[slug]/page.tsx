@@ -1,16 +1,17 @@
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { getNoteBySlug, getAllNotes } from '@/app/lib/content';
+import Layout from '@/app/components/Layout';
 import PageTitle from '@/app/components/PageTitle';
 import MDXRenderer from '@/app/components/MDXRenderer';
 import { generatePageMetadata } from '@/app/lib/metadata';
 
 interface NotePageProps {
-  params: { slug: string };
+  params: Promise<{ slug: string; locale: string }>;
 }
 
 export async function generateMetadata({ params }: NotePageProps): Promise<Metadata> {
-  const { slug } = params;
+  const { slug } = await params;
   const note = await getNoteBySlug(slug);
 
   if (!note) {
@@ -29,7 +30,7 @@ export async function generateMetadata({ params }: NotePageProps): Promise<Metad
 }
 
 export default async function NotePage({ params }: NotePageProps) {
-  const { slug } = params;
+  const { slug } = await params;
   const note = await getNoteBySlug(slug);
 
   if (!note) {
@@ -43,9 +44,10 @@ export default async function NotePage({ params }: NotePageProps) {
   });
 
   return (
-    <article className="max-w-content mx-auto pt-4">
-      {/* Title */}
-      <PageTitle title={note.title} />
+    <Layout>
+      <article className="max-w-content mx-auto pt-4">
+        {/* Title */}
+        <PageTitle title={note.title} />
 
       {/* Meta info */}
       <div className="flex items-center gap-4 mt-4 mb-10">
@@ -87,7 +89,8 @@ export default async function NotePage({ params }: NotePageProps) {
       <div className="prose prose-lg max-w-line text-text-primary">
         <MDXRenderer content={note.content} />
       </div>
-    </article>
+      </article>
+    </Layout>
   );
 }
 
