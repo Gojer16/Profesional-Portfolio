@@ -1,5 +1,7 @@
 # Orlando Ascanio - Portfolio
 
+<img width="1920" height="971" alt="Portfolio" src="https://github.com/user-attachments/assets/7a298915-3f1a-425d-ad37-676433758d8f" />
+
 A minimal, fast, and multilingual portfolio built with Next.js. Showcases AI engineering work, notes, and selected projects.
 
 ## ✨ Features
