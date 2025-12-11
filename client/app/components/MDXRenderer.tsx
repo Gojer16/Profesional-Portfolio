@@ -1,10 +1,19 @@
 import { MDXRemote } from "next-mdx-remote/rsc";
 import remarkGfm from "remark-gfm";
 import rehypeHighlight from "rehype-highlight";
+import TextLink from "./TextLink";
 
 interface MDXRendererProps {
   content: string;
 }
+
+const components = {
+  a: (props: any) => {
+    const { href, children } = props;
+    const isExternal = href.startsWith('http');
+    return <TextLink href={href} external={isExternal}>{children}</TextLink>;
+  },
+};
 
 export default function MDXRenderer({ content }: MDXRendererProps) {
   return (
@@ -13,7 +22,6 @@ export default function MDXRenderer({ content }: MDXRendererProps) {
         prose prose-invert max-w-[65ch]
         prose-headings:text-text-primary
         prose-p:text-text-secondary
-        prose-a:text-purple-400 prose-a:no-underline hover:prose-a:underline
         prose-code:text-text-primary
         prose-pre:bg-bg-secondary prose-pre:rounded-xl prose-pre:p-4
       "
@@ -26,9 +34,7 @@ export default function MDXRenderer({ content }: MDXRendererProps) {
             rehypePlugins: [rehypeHighlight],
           },
         }}
-        components={{
-          // custom components go here
-        }}
+        components={components}
       />
     </article>
   );

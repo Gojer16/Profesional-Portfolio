@@ -6,12 +6,19 @@ import PageTitle from '@/app/components/PageTitle';
 import NoteCard from '@/app/components/NoteCard';
 import { generatePageMetadata } from '@/app/lib/metadata';
 
-export const metadata: Metadata = generatePageMetadata({
-  title: 'Notes',
-  description:
-    'Short-form insights on AI engineering, systems design, product thinking, and founder mindset.',
-  path: '/notes',
-});
+type Props = {
+  params: { locale: string };
+};
+
+export async function generateMetadata({ params: { locale } }: Props): Promise<Metadata> {
+  const t = await getTranslations({ locale, namespace: 'notes' });
+  return generatePageMetadata({
+    title: t('title'),
+    description: t('subtitle'),
+    path: `/${locale}/notes`,
+    locale,
+  });
+}
 
 export default async function NotesPage() {
   const t = await getTranslations('notes');

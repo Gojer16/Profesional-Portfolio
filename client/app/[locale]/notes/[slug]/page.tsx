@@ -5,32 +5,36 @@ import Layout from '@/app/components/Layout';
 import PageTitle from '@/app/components/PageTitle';
 import MDXRenderer from '@/app/components/MDXRenderer';
 import { generatePageMetadata } from '@/app/lib/metadata';
+import { locales } from '@/i18n';
+import { SchemaMarkup } from '@/app/components/SchemaMarkup';
 
 interface NotePageProps {
-  params: Promise<{ slug: string; locale: string }>;
+  params: { slug: string; locale: string };
 }
 
 export async function generateMetadata({ params }: NotePageProps): Promise<Metadata> {
-  const { slug } = await params;
+  const { slug, locale } = params;
   const note = await getNoteBySlug(slug);
 
   if (!note) {
     return generatePageMetadata({
       title: 'Note Not Found',
       description: 'The requested note could not be found.',
-      path: `/notes/${slug}`,
+      path: `/${locale}/notes/${slug}`,
+      locale,
     });
   }
 
   return generatePageMetadata({
     title: note.title,
     description: note.insight_line,
-    path: `/notes/${slug}`,
+    path: `/${locale}/notes/${slug}`,
+    locale,
   });
 }
 
 export default async function NotePage({ params }: NotePageProps) {
-  const { slug } = await params;
+  const { slug } = params;
   const note = await getNoteBySlug(slug);
 
   if (!note) {
@@ -45,6 +49,7 @@ export default async function NotePage({ params }: NotePageProps) {
 
   return (
     <Layout>
+      <SchemaMarkup note={note} />
       <article className="max-w-content mx-auto pt-4">
         {/* Title */}
         <PageTitle title={note.title} />
@@ -96,5 +101,10 @@ export default async function NotePage({ params }: NotePageProps) {
 
 export async function generateStaticParams() {
   const notes = await getAllNotes();
-  return notes.map((note) => ({ slug: note.slug }));
+  return locales.flatMap((locale) =>
+    notes.map((note) => ({
+      locale,
+      slug: note.slug,
+    }))
+  );
 }

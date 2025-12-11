@@ -1,28 +1,27 @@
 import { NextIntlClientProvider } from 'next-intl';
-import { getMessages } from 'next-intl/server';
+import { getMessages, getTranslations } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import { locales } from '@/i18n';
 import { generatePageMetadata } from "@/app/lib/metadata";
 import type { Metadata } from "next";
 
-export const metadata: Metadata = generatePageMetadata({
-  title: "Orlando Ascanio",
-  description: "AI Engineer and Product Builder focused on creating intelligent systems and tools that help people learn, grow, and operate at their best. Building meaningful software with clarity and discipline.",
-  path: "/",
-});
+type Props = {
+  children: React.ReactNode;
+  params: { locale: string };
+};
 
-export function generateStaticParams() {
-  return locales.map((locale) => ({ locale }));
+export async function generateMetadata({ params: { locale } }: Props): Promise<Metadata> {
+  const t = await getTranslations({ locale, namespace: 'home' });
+  return generatePageMetadata({
+    title: t('title'),
+    description: t('intro'),
+    path: `/${locale}`,
+    locale,
+  });
 }
 
-export default async function LocaleLayout({
-  children,
-  params
-}: {
-  children: React.ReactNode;
-  params: Promise<{ locale: string }>;
-}) {
-  const { locale } = await params;
+export default async function LocaleLayout({ children, params }: Props) {
+  const { locale } = params;
   
   // Validate locale
   if (!locales.includes(locale as any)) {

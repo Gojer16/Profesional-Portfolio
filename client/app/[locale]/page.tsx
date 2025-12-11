@@ -6,12 +6,19 @@ import PageTitle from '@/app/components/PageTitle';
 import TextLink from '@/app/components/TextLink';
 import { generatePageMetadata } from '@/app/lib/metadata';
 
-export const metadata: Metadata = generatePageMetadata({
-  title: 'Orlando Ascanio',
-  description:
-    'AI Engineer and Product Builder creating intelligent systems that help people learn, think, and operate with clarity.',
-  path: '/',
-});
+type Props = {
+  params: { locale: string };
+};
+
+export async function generateMetadata({ params: { locale } }: Props): Promise<Metadata> {
+  const t = await getTranslations({ locale, namespace: 'home' });
+  return generatePageMetadata({
+    title: t('title'),
+    description: t('intro'),
+    path: `/${locale}`,
+    locale,
+  });
+}
 
 export default async function Home() {
   const t = await getTranslations('home');

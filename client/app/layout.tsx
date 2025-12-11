@@ -1,5 +1,6 @@
 import { Inter, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
+import { SchemaMarkup } from "./components/SchemaMarkup";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -16,13 +17,19 @@ const jetbrainsMono = JetBrains_Mono({
 
 export default function RootLayout({
   children,
+  params,
 }: {
   children: React.ReactNode;
+  params: { locale: string };
 }) {
   return (
-    <html>
+    <html lang={params.locale}>
+      <head>
+        <meta name="theme-color" content="#000000" />
+      </head>
       <body className={`${inter.className} ${jetbrainsMono.className}`}>
         {children}
+        <SchemaMarkup />
       </body>
     </html>
   );

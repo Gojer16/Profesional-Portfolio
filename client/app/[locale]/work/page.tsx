@@ -6,12 +6,19 @@ import PageTitle from '@/app/components/PageTitle';
 import ProjectCard from '@/app/components/ProjectCard';
 import { generatePageMetadata } from '@/app/lib/metadata';
 
-export const metadata: Metadata = generatePageMetadata({
-  title: 'Work',
-  description:
-    'Tools, prototypes, and systems built by Orlando Ascanio. Explore AI engineering projects, macOS applications, and open source contributions.',
-  path: '/work',
-});
+type Props = {
+  params: { locale: string };
+};
+
+export async function generateMetadata({ params: { locale } }: Props): Promise<Metadata> {
+  const t = await getTranslations({ locale, namespace: 'work' });
+  return generatePageMetadata({
+    title: t('title'),
+    description: t('intro'),
+    path: `/${locale}/work`,
+    locale,
+  });
+}
 
 export default async function WorkPage() {
   const t = await getTranslations('work');

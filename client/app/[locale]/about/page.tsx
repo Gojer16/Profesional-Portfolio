@@ -4,12 +4,19 @@ import Layout from '@/app/components/Layout';
 import PageTitle from '@/app/components/PageTitle';
 import { generatePageMetadata } from '@/app/lib/metadata';
 
-export const metadata: Metadata = generatePageMetadata({
-  title: 'About',
-  description:
-    "Learn about Orlando Ascanio's background, principles, and mission. AI engineer and product builder focused on learning fast, building real things, and developing the skills to eventually run a company.",
-  path: '/about',
-});
+type Props = {
+  params: { locale: string };
+};
+
+export async function generateMetadata({ params: { locale } }: Props): Promise<Metadata> {
+  const t = await getTranslations({ locale, namespace: 'about' });
+  return generatePageMetadata({
+    title: t('title'),
+    description: t('intro'),
+    path: `/${locale}/about`,
+    locale,
+  });
+}
 
 export default async function AboutPage() {
   const t = await getTranslations('about');
